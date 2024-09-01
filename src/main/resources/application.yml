@@ -18,3 +18,15 @@ spring:
 logging:
   level:
     org.springframework.cache: trace
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:mysql://spring-in-redis-mysql.can2ruokopis.ap-northeast-2.rds.amazonaws.com:3306/mydb
+    username: admin
+    password: password2024!
+    driver-class-name: com.mysql.cj.jdbc.Driver
